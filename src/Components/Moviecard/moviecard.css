@@ -1,0 +1,14 @@
+.movie {
+  margin-top: 40px;
+  width: 300px;
+}
+
+.photo-css {
+  border-radius: 60px;
+  filter: drop-shadow(0 0 6px rgba(105, 155, 255, 1));
+}
+
+.title-css {
+  border-radius: 999px;
+  filter: drop-shadow(0 0 6px rgb(70, 40, 2));
+}

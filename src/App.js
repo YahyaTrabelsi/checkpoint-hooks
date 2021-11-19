@@ -4,6 +4,7 @@ import Filter from "./Components/Filter/Filter";
 import Movielist from "./Components/MoviesList/Movieslist";
 import NavBar from "./Components/NavBar/NavBar";
 import { data } from "./data.js";
+import AddMovie from "./Components/AddMovie/AddMovie";
 
 function App() {
   const [textFilter, setTextFilter] = useState("");
@@ -24,6 +25,7 @@ function App() {
       <NavBar addMovie={addMovie} />
       <Filter setTextFilter={setTextFilter} setStarsRate={setStarsRate}/>
       <Movielist movies={movies} textFilter={textFilter} starsRate={starsRate} />
+      
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import "./addmovie.css";
 import { Form, Button } from "react-bootstrap";
+  import "./addmovie.css"
 
 const customStyles = {
   content: {
@@ -51,7 +51,7 @@ const AddMovie = ({ addMovie }) => {
 
   return (
     <div>
-      <button onClick={openModal} className="button-edit">Add Movie</button>
+      <button className="addMovie" onClick={openModal}>Add Movie</button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}

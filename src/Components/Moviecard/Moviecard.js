@@ -1,13 +1,19 @@
 import "./moviecard.css";
 import ReactStars from "react-rating-stars-component";
+import { Link } from "react-router-dom";
 
 function Moviecard({ movie }) {
   return (
     <div className="movie">
-      <img className="photo-css" width="250" src={movie.photo} alt="" />
-      <h2 className="title-css"> {movie.title} </h2>
+      <Link to={`/movie/moviedetails/${movie.id}`}>
 
-      <ReactStars edit={false} value={movie.rate} size={15} />
+      <img className="photo-css" width="250" src={movie.photo} alt="" />
+
+      </Link>
+      <h2> {movie.title} </h2>
+
+
+      <ReactStars edit={false} value={movie.rate} size={20} />
     </div>
   );
 }

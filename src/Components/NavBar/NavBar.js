@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import AddMovie from "../AddMovie/AddMovie";
-import { NavLink } from "react-router-dom";
+
 
 const NavBar = ({ addMovie }) => {
   return (
@@ -10,9 +10,9 @@ const NavBar = ({ addMovie }) => {
         <Container>
           <Navbar.Brand href="#home">My Movies App</Navbar.Brand>
           <Nav className="me-auto">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/features">Features</NavLink>
-          <NavLink to="/Favorite">Favorite</NavLink>
+          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#features">Features</Nav.Link>
+          <Nav.Link href="#favorite">Favorite</Nav.Link>
           </Nav>
 
           <AddMovie addMovie={addMovie} />
